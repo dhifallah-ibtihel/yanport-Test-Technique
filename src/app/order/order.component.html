@@ -1,7 +1,7 @@
 <router-outlet></router-outlet>
-<button (click)=test1()  class="btn1"> Start Cleaning</button>
-      <div [ngStyle]="{ 'grid-template-rows': 'repeat('+x1+', 1fr)','grid-template-columns': 'repeat('+y1+', 1fr)'}" class="grid-container">
-        <div [ngStyle]="{'grid-column': y,'grid-row': x}" class="grid-item">
+<button (click)=Clean()  class="btn1"> Start Cleaning</button>
+      <div [ngStyle]="{ 'grid-template-rows': 'repeat('+grid_width+', 1fr)','grid-template-columns': 'repeat('+grid_length+', 1fr)'}" class="grid-container">
+        <div [ngStyle]="{'grid-column':ordinate,'grid-row': absciss}" class="grid-item">
 
         </div>
         

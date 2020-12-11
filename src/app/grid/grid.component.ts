@@ -10,8 +10,8 @@ import { GridwidthService } from '../gridwidth.service';
 export class GridComponent implements OnInit {
    
   message="";
-  x=0;
-  y=0;
+  grid_width=0;
+  grid_length=0;
 
   constructor(private data:DataServiceService, private router:Router,private gridwidth:GridwidthService) { 
     
@@ -24,12 +24,10 @@ export class GridComponent implements OnInit {
     
   }
   
-  Test(){
-    this.x = Number(this.message.split(" ", 2)[0].split("=",2)[1]);
-    this.y = Number(this.message.split(" ",2)[1].split("=",2)[1]);
-    this.gridwidth.changeMessage([this.x,this.y]);
-    console.log(this.x);
-    console.log(this.y);
+  Start(){
+    this.grid_width = Number(this.message.split(" ", 2)[0].split("=",2)[1]);
+    this.grid_length = Number(this.message.split(" ",2)[1].split("=",2)[1]);
+    this.gridwidth.changeMessage([this.grid_width,this.grid_length]);
     this.router.navigate(['/Order'])
   }
 
