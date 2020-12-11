@@ -1,0 +1,27 @@
+input[type="submit"] {
+    margin: 1.5em 0;
+    padding: 0.8em;
+    font-size: .85em;
+  }
+  .agileits-top {
+    padding: 3em;
+  }
+  .main-agileinfo {
+    margin: 2em auto;
+  }
+
+  .main-agileinfo {
+    width: 36%;
+  }
+  .image{
+    height:48em; background-size:cover; width:auto;
+    background-image:url('src/ihoover.jpg');
+    background-position:50% 50%;
+  }
+  .btn1 {
+    color : rgb(49, 46, 46);
+    background-color: rgba(255, 222, 121, 0.96);
+    border-radius: 10px 0 0 10px;
+    position: center;
+    font-size: 25px;
+  }
